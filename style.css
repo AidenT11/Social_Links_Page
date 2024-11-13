@@ -1,0 +1,35 @@
+body{
+	padding: 0;
+	margin: 0;
+	background: hsl(0, 0%, 8%);
+	display: grid;
+	justify-items: center;
+	color: hsl(0, 0%, 100%);
+	font-family: "Inter", sans-serif;
+}
+
+.profile-container{
+	background: hsl(0, 0%, 12%);
+	padding: 5px;
+	width: 350px;
+	height: 500px;
+	margin-top: 10%;
+	border-radius: 5px;
+	display: grid;
+	justify-items: center;
+}
+
+.detail-container{
+	display: grid;
+	justify-items: center;
+}
+
+.detail-container img{
+	margin-top: 30px;
+	border-radius: 50%;
+}
+
+.text-container{
+	display: inherit;
+	justify-items: inherit;
+}
