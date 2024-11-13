@@ -19,17 +19,11 @@ body{
 	justify-items: center;
 }
 
-.detail-container{
-	display: grid;
-	justify-items: center;
-}
-
-.detail-container img{
+.profile-container img{
 	margin-top: 30px;
 	border-radius: 50%;
 }
 
-.text-container{
-	display: inherit;
-	justify-items: inherit;
+.profile-container	 #line1{
+	font-weight: 700;
 }
