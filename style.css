@@ -2,28 +2,87 @@ body{
 	padding: 0;
 	margin: 0;
 	background: hsl(0, 0%, 8%);
-	display: grid;
-	justify-items: center;
 	color: hsl(0, 0%, 100%);
 	font-family: "Inter", sans-serif;
 }
 
 .profile-container{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	background: hsl(0, 0%, 12%);
-	padding: 5px;
 	width: 350px;
 	height: 500px;
-	margin-top: 10%;
-	border-radius: 5px;
+	border-radius: 10px;
 	display: grid;
 	justify-items: center;
+	grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 5fr 0.25fr;
+}
+
+.link-container{
+	position: fixed;
+	left: 50%;
+	transform: translate(-50%, 0);
+	display: inline-grid;
+	justify-items: center;
+	grid-row-start: 5;
+	margin-top: 0;
+	gap: 20px;
+}
+
+.attribution{
+	grid-row-start: 6;
+	margin-top: -5px;
 }
 
 .profile-container img{
-	margin-top: 30px;
+	padding: 40px;
 	border-radius: 50%;
+	grid-row-start: 1;
 }
 
-.profile-container	 #line1{
-	font-weight: 700;
+.profile-container #line1{
+	font-weight: 600;
+	grid-row-start: 2;
+	margin-top: -20px;
+	font-size: 16px;
+}
+
+.profile-container #line2{
+	font-weight: 400;
+	grid-row-start: 3;
+	font-size: 10px;
+	margin-top: -12px;
+	color: hsl(75, 94%, 57%);
+}
+
+.profile-container #line3{
+	font-weight: 400;
+	grid-row-start: 4;
+	font-size: 10px;
+	margin-top: -2px;
+}
+
+.link-container button{
+	width: 275px;
+	height: 40px;
+	padding: 5px;
+	margin-bottom: -10px;
+	border-radius: 5px;
+	border: none;
+	background-color: hsl(0, 0%, 20%);
+	color: hsl(0, 0%, 100%);
+	font-size: 10px;
+	font-weight: 600;
+}
+
+.link-container button:hover{
+	background-color: hsl(75, 94%, 57%);
+	color: hsl(0, 0%, 20%);
+}
+
+.link-container button:focus{
+	background-color: hsl(75, 94%, 57%);
+	color: hsl(0, 0%, 20%);
 }
